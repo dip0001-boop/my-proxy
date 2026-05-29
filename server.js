@@ -18,3 +18,6 @@ app.use(
 app.listen(3000, () => {
     console.log("Proxy running on http://localhost:3000");
 })
+app.get("/", (req, res) => {
+    res.send("Proxy is running. Use /proxy");
+});
