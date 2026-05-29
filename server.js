@@ -7,7 +7,7 @@ const app = express();
 app.use(
     "/proxy",
     createProxyMiddleware({
-        target: "https://example.com",
+        target: "https://browse.therealsnubby.com",
         changeOrigin: true,
         pathRewrite: {
             "^/proxy": "",
